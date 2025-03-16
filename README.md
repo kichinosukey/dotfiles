@@ -6,7 +6,7 @@
 
 ```bash
 # リポジトリをクローン
-git clone https://github.com/ユーザー名/dotfiles.git ~/dotfiles
+git clone https://github.com/kichinosukey/dotfiles.git ~/dotfiles
 
 # バックアップ作成
 mv ~/.zshrc ~/.zshrc.backup

@@ -34,9 +34,6 @@ export JAVA_HOME=`/usr/libexec/java_home -v 20.0.2`
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 
-# Alfred workflow
-export CP01="こちらで提示すべき条件に不足があれば回答せずにこちらに確認してください。"
-
 # NVM configuration
 export NVM_DIR="$HOME/.nvm"
 [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh" 
