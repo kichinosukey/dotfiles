@@ -84,6 +84,7 @@ fi
 # Shell aliases
 alias szsh="source ~/.zshrc"
 alias grep="grep --color=always"
+alias lgrep='ls -la --color=auto | grep --color=auto'
 alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Resources/airport"
 alias cppmt="./copy_env_var_to_clipboard.zsh"
 

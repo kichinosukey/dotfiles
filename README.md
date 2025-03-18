@@ -37,12 +37,12 @@ source ~/.zshrc  # 初回はszshエイリアスがまだ使えないため
 - `lsd()` - カスタムディレクトリリスト表示
 
 ### 外部ツール設定
-- Pyenv
-- Direnv
-- Jump
-- Jenv
-- Conda
-- Google Cloud SDK
+- [Pyenv](https://github.com/pyenv/pyenv)
+- [Direnv](https://github.com/direnv/direnv)
+- [Jump](https://github.com/gsamokovarov/jump)
+- [Jenv](https://github.com/jenv/jenv)
+- [Conda](https://github.com/conda/conda)
+- [Google Cloud SDK](https://cloud.google.com/sdk/docs)
 
 ## 更新方法
 
