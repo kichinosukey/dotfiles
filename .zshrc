@@ -118,3 +118,4 @@ optimize_image() {
 function lsd() {
   ls -ld $PWD/* | grep $@
 }
+. "$HOME/.local/bin/env"
