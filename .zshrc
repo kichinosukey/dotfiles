@@ -35,9 +35,8 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 
 # NVM configuration
-export NVM_DIR="$HOME/.nvm"
-[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh" 
-[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" 
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 #--------------------------------------------------------------------
 # EXTERNAL TOOL INITIALIZATION
@@ -109,7 +108,7 @@ optimize_image() {
   for input in "$@"; do
     for file in $(ls $input 2>/dev/null); do
       local output="${file%.*}-optimized.jpg"
-      convert "$file" -strip -interlace Plane -quality 85 "$output"
+      magick "$file" -strip -interlace Plane -quality 85 "$output"
     done
   done
 }
@@ -119,3 +118,4 @@ function lsd() {
   ls -ld $PWD/* | grep $@
 }
 . "$HOME/.local/bin/env"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

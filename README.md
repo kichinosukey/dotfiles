@@ -37,6 +37,8 @@ source ~/.zshrc  # 初回はszshエイリアスがまだ使えないため
 
 #### 関数
 - `optimize_image()` - 画像最適化
+  - 使用方法: `optimize_image image.jpg` または `optimize_image *.png`
+  - 指定した画像を最適化して、[元ファイル名]-optimized.jpg として保存
 - `lsd()` - カスタムディレクトリリスト表示
 
 #### 外部ツール設定
@@ -46,6 +48,7 @@ source ~/.zshrc  # 初回はszshエイリアスがまだ使えないため
 - [Jenv](https://github.com/jenv/jenv)
 - [Conda](https://github.com/conda/conda)
 - [Google Cloud SDK](https://cloud.google.com/sdk/docs)
+- [ImageMagick](https://imagemagick.org/) - optimize_image関数に必要
 
 ### 更新方法
 
